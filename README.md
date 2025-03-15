@@ -28,7 +28,8 @@ Paper: https://arxiv.org/abs/2109.11978
 3. Install Isaac Gym
    - Download and install Isaac Gym Preview 3 (Preview 2 will not work!) from https://developer.nvidia.com/isaac-gym
    - `cd isaacgym/python && pip install -e .`
-   - Try running an example `cd examples && python 1080_balls_of_solitude.py`
+   - Try running an example `cd examples && export LD_LIBRARY_PATH=/home/tommy/anaconda3/envs/legged_gym/lib:$LD_LIBRARY_PATH
+ && python 1080_balls_of_solitude.py`
    - For troubleshooting check docs `isaacgym/docs/index.html`)
 4. Install rsl_rl (PPO implementation)
    - Clone https://github.com/leggedrobotics/rsl_rl
